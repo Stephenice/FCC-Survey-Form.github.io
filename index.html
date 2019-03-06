@@ -7,14 +7,14 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <div id="title">
-        <h1></h1>
+    <div>
+        <h1  id="title">Survey Form</h1>
     </div>
 
     <div>
-        <p>Let us know how we can improve freeCodeCamp</p>
+        <p  id="description"> Let us know how we can improve freeCodeCamp</p>
 
-        <form action="">
+        <form action="" id="survey-form">
             <label for="name" id="name-label">Name</label>
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
@@ -22,7 +22,7 @@
             <input type="email" name="email" id="email"  placeholder="Enter your email" required>
 
             <label for="age" id="number-label">Age</label>
-            <input type="number" name="age" id="age" placeholder="Enter your age" min="18" max="67" required>
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="18" max="67" required>
 
           
             <label for="currentRole">Which option best describes your current role?</label>
@@ -50,22 +50,26 @@
                 </select>
 
 
-                <label for="most-like"> Things that should be improved in the future
+                <label for="preferences"> Things that should be improved in the future
                         (Check all that apply):</label>
                         <ul>
-                            <li><label><input type="checkbox" name="" value="1" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="2" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="3" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="4" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="5" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="6" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="7" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="8" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="9" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="10" id=""></label></li>
-                            <li><label><input type="checkbox" name="" value="11" id=""></label></li>
+                            <li><label><input type="checkbox" name="prefer" value="1" id="">Front-end Projects</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="2" id="">Back-end Projects</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="3" id="">Data Visualization</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="4" id="">Challenges</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="5" id="">Open Source Community</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="6" id="">Gitter help rooms</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="7" id="">Videos</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="8" id="">City Meetups</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="9" id="">Wiki</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="10" id="">Forum</label></li>
+                            <li><label><input type="checkbox" name="prefer" value="11" id="">Additional Courses</label></li>
                         </ul>
-            <input type="checkbox" name="" id="">
+
+            <label for="preferences"> Any Comments or Suggestions?</label>
+           <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <button type="submit" id="submit">Submit</button>
             
         </form>
     </div>
